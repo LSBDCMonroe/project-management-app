@@ -25,6 +25,7 @@ const Project =({title, status, description, progress, link, workers, onEdit}: a
             <span className="bold">Working : </span>
             {workers.map((worker: string, index: number)=><Badge key={index}>{worker}</Badge>)}
             </div>
+            <div>Test</div>
          </Card>);
   }
 
