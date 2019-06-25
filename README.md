@@ -1,10 +1,10 @@
 # Project-Management <br>
 
 ```
-git clone https://github.com/LSBDCMonroe/Financial-App.git
-cd Project-Management
+git clone https://github.com/LSBDCMonroe/project-management-app.git
+cd project-management-app
 npm i
 npm start
 ```
 
-https://lsbdc-finapp.netlify.com/
+https://project-management-app.netlify.com/

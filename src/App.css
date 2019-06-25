@@ -54,6 +54,17 @@ a, a:visited {
   justify-content: center;
   vertical-align: middle;
 }
+.half{
+  width: 50%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.align-center{
+ text-align: center;
+}
 
 .selected{
   color: red!important;

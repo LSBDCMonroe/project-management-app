@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
 
 const Nav = styled.div`
-  top: 0em;
+  top: 0;
   position: fixed;
   z-index: 10;
   height: 100vh;
@@ -12,17 +12,27 @@ const Nav = styled.div`
   grid-template-rows: 1fr 1fr 1fr;
   place-items: center;
   background: dodgerblue;
-  transition: 300ms ease-out;`;
+  transition: 300ms ease-out;
+  @media(max-width: 600px){
+    top: calc(100% - 50px);
+    grid-template-rows: 1fr;
+    place-items: end;
+    width: 100%;
+    place-items: center;
+    height: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }`;
 
 const FloatBtn = styled.button`
   position: fixed;
   bottom: 1em;
   left: 1em;
+  z-index: 10;
   border: 0;
   border-radius: 50%;`;
 
   const FloatBtn2 = styled(FloatBtn)`
-    left: 95%;`;
+    left: calc(100% - 4em );`;
 
 const active = {textShadow: "2px 2px 4px #000000" , color: "white"};
 const Navbar = ({showNav, hide}: {showNav: any, hide: any})=> (
