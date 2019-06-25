@@ -1,0 +1,108 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css";
+@import "./style/normalize.css";
+
+*, html, body, #root{
+  padding: 0;
+  margin: 0;
+}
+.nav-item{
+  color: inherit;
+}
+a, a:visited {
+  color: inherit;
+}
+.align-left{
+  text-align: left ;
+}
+.bold{
+  font-weight: bold !important;
+}
+
+.txt-sm{
+    font-size: 1.5em;
+    padding: .3em;
+}
+
+.txt-md{
+    font-size: 2em;
+    padding: .3em;
+}
+.txt-xl{
+    font-size: 15em;
+    padding: 10px;
+}
+
+.grid-main{
+
+}
+
+.show{
+}
+
+.hide{
+  position: absolute;
+  left: -230px;
+
+  transition: 300ms ease-out;
+}
+.full{
+
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.selected{
+  color: red!important;
+}
+
+.btn-round{
+  border: 0;
+  border-radius: 50%;
+}
+.capitalize{
+   text-transform: capitalize;
+}
+
+.gradient-heading{
+  background: -webkit-linear-gradient(-150deg, #4fc3f7, dodgerblue);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 900;
+line-height: 1;
+font-size: 3em;
+text-transform: uppercase;
+color: #a483c5;
+font-family: arial;
+}
+
+.top{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-weight: bold;
+}
+
+.items-end{
+display: grid;
+justify-items: end;
+}
+.bt{
+  background: white;
+  border: 0;
+  padding: .5em;
+  border-radius: .1em;
+  box-shadow: .1em grey;
+  text-align: center;
+  line-height: 22px;
+   vertical-align: middle;
+
+}
+
+.bt:hover{
+  background: dodgerblue;
+  color: white;
+}
