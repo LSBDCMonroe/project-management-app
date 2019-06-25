@@ -14,9 +14,9 @@ const Project =({title, status, description, progress, link, workers, onEdit}: a
             <div className="determinate" style={{width: progresss+"%"}}></div>
            </div>
            <Grid color="3" className="bold">
-             <span className="txt-md pointer" onClick={()=>setProgresss(progresss - 1)}><i className="material-icons">add</i></span>
+             <span className="txt-md pointer" onClick={()=>setProgresss(progresss - 1)}><i className="material-icons">remove</i></span>
              <span className="align-center">{progresss}%</span>
-             <span className="txt-md pointer" onClick={()=>setProgresss(progresss + 1)}><i className="material-icons">remove</i></span>
+             <span className="txt-md pointer" onClick={()=>setProgresss(progresss + 1)}><i className="material-icons">add</i></span>
            </Grid >
            <p>{description}</p>
             <div className="bold">Link : {link}</div>
