@@ -19,7 +19,7 @@ const Project =({title, status, description, progress, link, workers, onEdit}: a
              <span className="txt-md pointer" onClick={()=>setProgresss(progresss + 1)}><i className="material-icons">add</i></span>
            </Grid >
            <p>{description}</p>
-            <div className="bold">Link : {link}</div>
+            <div className="bold">Link : {link && link.length > 0 ? link: "Unavilable"}</div>
             <br/><hr/>
             <div>
             <span className="bold">Working : </span>

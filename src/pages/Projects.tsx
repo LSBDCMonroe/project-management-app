@@ -29,7 +29,6 @@ const obj = [{
   progress: 90,
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempiquip ex ea commodo consequat. Dutate velit esse cillum dolore eu fugiat nulla pariatur.",
   workers: ["Aayush Shrestha"],
-  link: "aayushh.com",
   startedOn: "2019",
   completedOn: null
 }
