@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   padding-left: 55px;
   @media(max-width: 600px){
   width: 100%;
-  margin-left: 0;}
+  padding-left: 1em;}
   `;
 
 const Home = ({userName}:{userName: string})=>

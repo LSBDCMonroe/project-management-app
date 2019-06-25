@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   padding-left: 55px;
   @media(max-width: 600px){
   width: 100%;
-  margin-left: 0;}
+    padding-left: 1em;}
 `;
 
 const obj = [{
@@ -53,7 +53,7 @@ const Projects =({userName}:{userName: string})=>{
       </ul>
 
       {obj.map((i: object, index: number)=><Project {...i} key={index} onEdit={()=>setModal(true)}/>)}
-
+   <Modal show={modal} onClose={()=>setModal(false)}/>
 </div>
       </Wrapper>);
 }
