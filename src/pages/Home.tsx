@@ -1,19 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Header} from '../components';
-import {Card} from '../style/styled';
-
-const Wrapper = styled.div`
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  min-height: 100vh;
-  width: 100%;
-  text-align: center;
-  padding: .3em 1em;
-  padding-left: 55px;
-  @media(max-width: 600px){
-  width: 100%;
-  padding-left: 1em;}
-  `;
+import {Card, Wrapper} from '../style/styled';
 
 const Home = ({userName}:{userName: string})=>
   <Wrapper className="">
