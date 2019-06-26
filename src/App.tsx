@@ -20,7 +20,7 @@ export default class App extends React.Component <{}, Props>{
       return (
         <Router>
           <div className={this.state.showNav? "grid-main": ""}>
-          <Navbar showNav={this.state.showNav} hide={()=>{this.setState({showNav: !this.state.showNav})}}/>
+          <Navbar />
           <Switch>
             <Route path="/projects" render={()=> <Projects {...this.state} />} />
             <Route path="/setting" component={Setting} />

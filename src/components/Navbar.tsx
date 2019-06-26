@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import '../pages/Startpage.css';
 import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
 
 const Nav = styled.div`
@@ -35,7 +36,7 @@ const FloatBtn = styled.button`
     left: calc(100% - 4em );`;
 
 const active = {textShadow: "2px 2px 4px #000000" , color: "white"};
-const Navbar = ({showNav, hide}: {showNav: any, hide: any})=> (
+const sideNavbar = ({showNav, hide}: {showNav: any, hide: any})=> (
   <div>
     <Nav className={showNav? "show": "hide"}>
 
@@ -47,5 +48,20 @@ const Navbar = ({showNav, hide}: {showNav: any, hide: any})=> (
       <FloatBtn2><a href="mailto:help@finapp.com"><i className="fas fa-question-circle  txt-md"></i></a></FloatBtn2>
   </div>
   );
+
+const Navbar = ({}) => (
+
+  <nav>
+    <div className="nav-wrapper">
+      <a href="#" className="brand-logo">Logo</a>
+      <ul id="nav-mobile" className="right hide-on-med-and-down">
+        <li><a href="sass.html">Current Projects</a></li>
+        <li><a href="badges.html">Past Projects</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+      
+);
 
 export default Navbar;

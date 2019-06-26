@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Header} from '../components';
+import {Navbar} from '../components';
 import {Card, Badge} from '../style/styled';
 
 const Wrapper = styled.div`
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 
 const Home = ({userName}:{userName: string})=>
   <Wrapper className="">
-      <Header userName={userName}/>
+      <Navbar userName={userName}/>
       <Card className="bold txt-sm">
       <div className="align-center">Current Projects: 0</div>
       <div className="align-center">Completed Projects: 10</div>
