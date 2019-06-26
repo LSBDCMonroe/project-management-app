@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import './Startpage.css';
+import Logo from '../assets/images/logo_on.png';
 //background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); height: 100vh;
   
 const Wrapper = styled.div`
@@ -20,10 +21,15 @@ const Start = styled.form`
 
 const Startpage = ({login, onChange}:{login: any, onChange: any})=>
 <Wrapper>
+
                       <div className="container center" >
+                        
                         <div className="row card ">
+                        <div className="card-image " style={{padding:"2em"}}>
+                            <img src={Logo}/>
+                      </div>
                         <div className="col m12 m6">
-                          <h2 className="center-align blue-text">Login</h2>
+                          <h4 className="center-align blue-text">Login</h4>
                           <div className="row card-content">
                             <div className="input-field col s12">
                               <div>UserName<input onChange={onChange}/></div>
@@ -33,7 +39,7 @@ const Startpage = ({login, onChange}:{login: any, onChange: any})=>
                           <div className="row">
                             <div className="col m12">
                               <p className="center-align">
-                                <button className="btn btn-large waves-effect waves-light" onClick={login}>
+                                <button className="btn btn-small waves-effect waves-light" onClick={login}>
                                   Login
                                 </button>
                               </p>                                                      
