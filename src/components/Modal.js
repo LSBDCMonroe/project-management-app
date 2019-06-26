@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components'
-
 const Wrapper = styled.div`
 position: fixed;
 z-index: 1;
@@ -42,9 +41,7 @@ color: white;
 background: #006666;
 border: 0;
 margin: 0;
-height: 3em;
-`;
-
+height: 3em;`;
 
 const Modal = props =>{
 if(props.show){
@@ -54,8 +51,11 @@ if(props.show){
                 <Btn style={{float: "right"}} onClick={props.close} className="bt right-corner"  onClick={props.onClose}> &nbsp;X&nbsp; </Btn>
               </Header>
                 <div >
-                <div style={{minheight: "5em", padding: "2em"}} className="blue-txt center bold txt-md">
-                <input />
+                <div style={{minheight: "5em", padding: "2em"}} className="blue-txt bold txt-md">
+                <input placeholder="Project Name"/>
+                <input placeholder="Description"/>
+                <input placeholder="Link"/>
+                <span className="txt-xs">Team Members</span><input placeholder="Members"/>
                 </div>
                  <div>
                   <button  className="btn hoverr blue-bg half" onClick={props.onConfirm}>Add</button>

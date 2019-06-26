@@ -32,7 +32,8 @@ const FloatBtn = styled.button`
   border-radius: 50%;`;
 
   const FloatBtn2 = styled(FloatBtn)`
-    left: calc(100% - 4em );`;
+    left: calc(100% - 4em );
+    bottom: 3em;`;
 
 const active = {textShadow: "2px 2px 4px #000000" , color: "white"};
 const Navbar = ({showNav, hide}: {showNav: any, hide: any})=> (
