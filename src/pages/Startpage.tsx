@@ -5,7 +5,7 @@ import Logo from '../assets/images/logo_on.png';
 //background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); height: 100vh;
   
 const Wrapper = styled.div`
-  background-color: #ffffff;  
+  background-color: #dddd;  
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
@@ -28,12 +28,11 @@ const Startpage = ({login, onChange}:{login: any, onChange: any})=>
                         <div className="card-image " style={{padding:"2em"}}>
                             <img src={Logo}/>
                       </div>
-                        <div className="col m12 m6">
-                          <h4 className="center-align blue-text">Login</h4>
+                        <div className="">
                           <div className="row card-content">
                             <div className="input-field col s12">
-                              <div>UserName<input onChange={onChange}/></div>
-                              <div>Password<input type="password" onChange={onChange}/></div>
+                              <input placeholder={"Username or Email"} onChange={onChange}/>
+                              <input placeholder={"Password"} type="password" onChange={onChange}/>
                             </div>
                           </div> 
                           <div className="row">
