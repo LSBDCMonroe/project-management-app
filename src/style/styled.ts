@@ -9,7 +9,6 @@ const Badge = styled.div`
   display: inline-block,
   margin: 0.4em;
   border-radius: .4em;
-  max-width: 10em;
   text-align: center;
   font-weight: bolder
   background: ${props => props.color};
@@ -30,4 +29,17 @@ const Badge = styled.div`
    grid-template-columns: repeat(${props => props.color}, 1fr);
   `;
 
-  export {Card, Badge, Grid};
+  const Wrapper = styled.div`
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: .3em 1em;
+    padding-left: 55px;
+    background: ${props => props.color};
+    @media(max-width: 600px){
+    width: 100%;
+    padding-left: 1em;}
+    `;
+
+  export {Card, Badge, Grid, Wrapper};

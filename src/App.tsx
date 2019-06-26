@@ -30,15 +30,9 @@ export default class App extends React.Component <{}, Props>{
         </Router>
       )} else{
         return(
-        <Router>
-          <Switch>
-            <Route path="/" render={()=>
               <Startpage
               onChange={(e:any)=>{this.setState({userName: e.target.value})}}
               login={()=>{this.setState({loggedin: true})}}/>
-                } />
-          </Switch>
-        </Router>
         )};
 
     }

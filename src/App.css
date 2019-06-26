@@ -18,6 +18,18 @@ a, a:visited {
   font-weight: bold !important;
 }
 
+.end{
+    justify-self: end;
+}
+
+.txt-xs{
+  font-size: 0.95em;
+}
+
+.start{
+    justify-self: start;
+}
+
 .txt-sm{
     font-size: 1.5em;
     padding: .3em;
