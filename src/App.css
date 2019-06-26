@@ -79,8 +79,10 @@ a, a:visited {
 }
 
 .gradient-heading{
-  background: -webkit-linear-gradient(-150deg, #4fc3f7, dodgerblue);
--webkit-background-clip: text;
+ /* background: -webkit-linear-gradient(-150deg, #4fc3f7, dodgerblue);
+*/
+background: #002675;
+ -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 font-weight: 900;
 line-height: 1;
