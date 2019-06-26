@@ -36,7 +36,7 @@ const FloatBtn = styled.button`
     bottom: 3em;`;
 
 const active = {textShadow: "2px 2px 4px #000000" , color: "white"};
-const Navbar = ({showNav, hide}: {showNav: any, hide: any})=> (
+const sideNavbar = ({showNav, hide}: {showNav: any, hide: any})=> (
   <div>
     <Nav className={showNav? "show": "hide"}>
 
@@ -48,5 +48,23 @@ const Navbar = ({showNav, hide}: {showNav: any, hide: any})=> (
       <FloatBtn2><a href="mailto:help@finapp.com"><i className="fas fa-question-circle  txt-md"></i></a></FloatBtn2>
   </div>
   );
+
+const Navbar = () => (
+  
+  <nav>
+  <div className="nav-wrapper">  <ul id="nav-mobile" className="left hide-on-med-and-down">
+      <li><NavLink to="/projects">Current Projects</NavLink></li>
+      <li><NavLink to="/#">Past Projects</NavLink></li>
+      <li><NavLink to="/#">Team members</NavLink></li>
+      <li><NavLink to="/Setting">Settings</NavLink></li>
+      <li><NavLink to="/#"><i className="fas fa-user"></i></NavLink></li>
+    </ul>
+  </div>
+  <div className="nav-wrapper">  <ul id="nav-mobile" className="right hide-on-med-and-down">
+    </ul>
+  </div>
+  </nav>
+
+);
 
 export default Navbar;
