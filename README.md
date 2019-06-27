@@ -8,5 +8,3 @@ npm start
 ```
 
 https://project-management-app.netlify.com/
-
-test
