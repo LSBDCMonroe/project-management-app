@@ -19,26 +19,23 @@ const Project =({title, status, description, progress, link, workers, onEdit, st
               <div className="determinate" style={{width: progresss+"%"}}></div>
            </div>
 
-           {editMode?
-           <Grid color="3" className="bold">
-             <span className="txt-md pointer start" onClick={()=>setProgresss(progresss - 5)}><i className="material-icons">remove</i></span>
-             <span className="align-center">{progresss}%</span>
-             <span className="txt-md pointer end" onClick={()=>setProgresss(progresss + 5)}><i className="material-icons">add</i></span>
-           </Grid >:   <div className="bold center">
-                         <span className="align-center">{progresss}%</span>
-                       </div>
+          {editMode?
+            <div>
+             <Grid color="3" className="bold">
+               <span className="txt-md pointer start" onClick={()=>setProgresss(progresss - 5)}><i className="material-icons">remove</i></span>
+               <span className="align-center">{progresss}%</span>
+               <span className="txt-md pointer end" onClick={()=>setProgresss(progresss + 5)}><i className="material-icons">add</i></span>
+             </Grid>
+              <input defaultValue={description}/>
+              <div className="bold">Link : <input defaultValue={link}/></div>
+            </div>:
+                  <div>
+                    <div className="bold center"><span className="align-center">{progresss}%</span></div>
+                     <p>{description}</p>
+                     <div className="bold">Link : {link && link.length > 0 ? link: "Unavilable"}</div>
+                     <div className="grey-text"><br/>Started on: {startedOn}</div><hr/><br/>
+                   </div>
           }
-          {!editMode?
-           <div>
-             <p>{description}</p>
-             <div className="bold">Link : {link && link.length > 0 ? link: "Unavilable"}</div>
-                <div className="grey-text">Started on: {startedOn}</div><hr/><br/>
-           </div>
-           : <div>
-             <input defaultValue={description}/>
-             <div className="bold">Link : <input defaultValue={link}/></div>
-             </div>
-         }
            <div>
             <span className="bold">Working : </span>
             {workers.map((worker: string, index: number)=><Badge key={index}>{worker}</Badge>)}

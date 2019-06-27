@@ -36,9 +36,9 @@ const FloatBtn = styled.button`
     bottom: 3em;`;
 
 const active = {textShadow: "2px 2px 4px #000000" , color: "white"};
-const Navbar = ({showNav, hide}: {showNav: any, hide: any})=> (
+const Navbar = ({showNav, hide, loggedin}: any)=> (
   <div>
-    <Nav className={showNav? "show": "hide"}>
+    <Nav className={showNav && loggedin? "show": "hide"}>
 
       <NavLink activeStyle={active} className="nav-item txt-md" to="/home"><i className="fas fa-home"></i></NavLink>
       <NavLink activeStyle={active}  className="nav-item txt-md" to="/projects"><i className="fas fa-tasks"></i></NavLink>
