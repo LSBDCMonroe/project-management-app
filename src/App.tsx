@@ -21,7 +21,7 @@ export default class App extends React.Component <{}, Props>{
             <Switch>
               <Route path="/projects" render={()=> <Projects {...this.state} />} />
               <Route path="/setting" component={Setting} />
-              <Route path="/" render={()=> <Home {...this.state}  />} />
+              <Route path="*" render={()=> <Home {...this.state}  />} />
             </Switch>
            :<Switch>
               <Route path="*" render={()=> <Startpage onChange={(e:any)=>{this.setState({userName: e.target.value})}}
