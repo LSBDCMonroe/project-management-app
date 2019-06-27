@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import {Project, Modal} from '../components';
 import {Wrapper} from '../style/styled';
 import {projects} from '../fakeJson';
+import {Footer} from '../components';
+
 const Btn = styled.button`
    border-radius: 1em;`;
 const color = "linear-gradient(135deg, #667eea 0%, #764ba2 100%)";
@@ -19,6 +21,7 @@ const Projects =({userName}:{userName: string})=>{
         {projects.map((i: object, index: number)=><Project {...i} key={index} onEdit={()=>setModal(true)}/>)}
         <Modal show={modal} onClose={()=>setModal(false)}/>
       </div>
+      <Footer/>
       </Wrapper>);
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Footer} from '../components';
 import {Navbar} from '../components';
 import {Card, Badge} from '../style/styled';
 
@@ -24,6 +25,7 @@ const Home = ({userName}:{userName: string})=>
       <div className="align-center">Available Members: <div className="chip">Aayush</div></div>
       <div className="align-center">Average Project/Members: 3.2</div>
       </Card>
+      <Footer/>
   </Wrapper>;
 
 export default Home;
