@@ -52,17 +52,14 @@ const sideNavbar = ({showNav, hide}: {showNav: any, hide: any})=> (
 const Navbar = () => (
   
   <nav>
-  <div className="nav-wrapper">  
-  <a href="https://www.lsbdc.org/" className="brand-logo left">LSBDC</a>
+  <div className="nav-wrapper black">  
+  <a href="https://www.lsbdc.org/" className="brand-logo left logo">LSBDC</a>
   <ul id="nav-mobile" className="right hide-on-med-and-down">
-      <li><NavLink to="/#"><i className="fas fa-user"></i></NavLink></li>
       <li><NavLink to="/projects">Current Projects</NavLink></li>
       <li><NavLink to="/#">Past Projects</NavLink></li>
       <li><NavLink to="/#">Team members</NavLink></li>
-      <li><NavLink to="/Setting">Settings</NavLink></li>
-    </ul>
-  </div>
-  <div className="nav-wrapper">  <ul id="nav-mobile" className="right hide-on-med-and-down">
+      <li><NavLink to="/#"><i className="fas fa-user"></i></NavLink></li>
+      <li><NavLink to="/Setting"><i className="fas fa-cog directory"></i></NavLink></li>
     </ul>
   </div>
   </nav>
