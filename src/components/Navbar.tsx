@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import '../pages/Startpage.css';
 import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
 
 const Nav = styled.div`
@@ -49,21 +50,19 @@ const sideNavbar = ({showNav, hide}: {showNav: any, hide: any})=> (
   </div>
   );
 
-const Navbar = () => (
-  
-  <nav>
-  <div className="nav-wrapper black">  
-  <a href="https://www.lsbdc.org/" className="brand-logo left logo">LSBDC</a>
-  <ul id="nav-mobile" className="right hide-on-med-and-down">
-      <li><NavLink to="/projects">Current Projects</NavLink></li>
-      <li><NavLink to="/#">Past Projects</NavLink></li>
-      <li><NavLink to="/#">Team members</NavLink></li>
-      <li><NavLink to="/#"><i className="fas fa-user"></i></NavLink></li>
-      <li><NavLink to="/Setting"><i className="fas fa-cog directory"></i></NavLink></li>
-    </ul>
-  </div>
-  </nav>
+const Navbar = ({}) => (
 
+  <nav>
+    <div className="nav-wrapper">
+      <a href="#" className="brand-logo">Logo</a>
+      <ul id="nav-mobile" className="right hide-on-med-and-down">
+        <li><a href="sass.html">Current Projects</a></li>
+        <li><a href="badges.html">Past Projects</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+      
 );
 
 export default Navbar;
