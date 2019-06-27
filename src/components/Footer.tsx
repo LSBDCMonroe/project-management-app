@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = ({}) => 
 
-<footer className="page-footer">
+<footer className="page-footer" style={{width: "100%"}}>
 <div className="container">
   <div className="row">
     <div className="col l6 s12">
