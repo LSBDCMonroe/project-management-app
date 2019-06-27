@@ -20,6 +20,7 @@ const Start = styled.form`
 
 
 const Startpage = ({login, onChange}:{login: any, onChange: any})=>
+
 <Wrapper>
 
                       <div className="container center" >
@@ -47,6 +48,6 @@ const Startpage = ({login, onChange}:{login: any, onChange: any})=>
                         </div>     
                         </div>
                       </div>
-                      </Wrapper>;
+</Wrapper>;
 
 export default Startpage;
