@@ -4,9 +4,7 @@ import './App.css';
 import {Navbar} from './components';
 import {Home, Setting, Projects, Startpage} from './pages';
 
-type Props = {
-  loggedin: boolean, tokenChecked: boolean, showNav: boolean, userName: string
-}
+type Props = {loggedin: boolean, tokenChecked: boolean, showNav: boolean, userName: string}
 
 export default class App extends React.Component <{}, Props>{
   constructor(props: Props){
@@ -16,24 +14,21 @@ export default class App extends React.Component <{}, Props>{
 
   componentWillMount() {}
   render(){
-    if(this.state.loggedin){
-      return (
+    return(
         <Router>
-          <div className={this.state.showNav? "grid-main": ""}>
-          <Navbar />
-          <Switch>
-            <Route path="/projects" render={()=> <Projects {...this.state} />} />
-            <Route path="/setting" component={Setting} />
-            <Route path="/" render={()=> <Home {...this.state}  />} />
-          </Switch>
-          </div>
+          <Navbar loggedin = {this.state.loggedin} showNav={this.state.showNav} hide={()=>{this.setState({showNav: !this.state.showNav})}}/>
+            {this.state.loggedin?
+            <Switch>
+              <Route path="/projects" render={()=> <Projects {...this.state} />} />
+              <Route path="/setting" component={Setting} />
+              <Route path="*" render={()=> <Home {...this.state}  />} />
+            </Switch>
+           :<Switch>
+              <Route path="*" render={()=> <Startpage onChange={(e:any)=>{this.setState({userName: e.target.value})}}
+                                                    login={()=>{this.setState({loggedin: true})}}/>} />
+            </Switch>
+            }
         </Router>
-      )} else{
-        return(
-              <Startpage
-              onChange={(e:any)=>{this.setState({userName: e.target.value})}}
-              login={()=>{this.setState({loggedin: true})}}/>
-        )};
-
+);
     }
 }
