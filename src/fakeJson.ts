@@ -46,7 +46,7 @@ const employees = [
     firstName: "Sonam",
     lastName: "Gurung",
     username: "SonamTheMom",
-    email: "sonamgnar@gmail.com",
+    email: "gurungamar25@gmail.com",
     currentProjects: 2,
     finishedProjects: 15
   }

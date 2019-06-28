@@ -6,12 +6,14 @@ import {employees} from '../fakeJson';
 import {Footer} from '../components';
 
 
+
+
+
 const TeamMembers = ({userName}:{userName: string}) => {
     const [modal, setModal] = useState(false);
     return (
         <Wrapper>
             <div>
-                <p>This is the Team Members Page</p>
                 {employees.map((i: object, index: number)=><TeamMember {...i} key={index}/>)}
             </div>
         </Wrapper>
