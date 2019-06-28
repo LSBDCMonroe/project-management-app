@@ -26,11 +26,11 @@ const Nav = styled.div`
 
 const FloatBtn = styled.button`
   position: fixed;
-  bottom: 1em;
-  left: 1em;
+  bottom: 0.5em;
+  left: 4em;
   z-index: 10;
   border: 0;
-  border-radius: 50%;`;
+  border-radius: 45%;`;
 
   const FloatBtn2 = styled(FloatBtn)`
     left: calc(100% - 4em );
@@ -43,6 +43,7 @@ const Navbar = ({showNav, hide, loggedin}: any)=> (
 
       <NavLink activeStyle={active} className="nav-item txt-md" to="/home"><i className="fas fa-home"></i></NavLink>
       <NavLink activeStyle={active}  className="nav-item txt-md" to="/projects"><i className="fas fa-tasks"></i></NavLink>
+      <NavLink activeStyle={active}  className="nav-item txt-md" to="/team"><i className="fas fa-users"></i></NavLink>
             <NavLink activeStyle={active}   className="nav-item txt-md" to="/setting"><i className="fas fa-cog"></i></NavLink>
     </Nav>
       <FloatBtn onClick={hide}><i className={ showNav? "fa fa-angle-left txt-md" : "fa fa-angle-right txt-md"}></i></FloatBtn>
