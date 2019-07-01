@@ -20,6 +20,10 @@
 
 }
 
+.custom-border-radius{
+    border-radius:20px;
+}
+
 .nav-search-bar{
     background-color: red;
 }

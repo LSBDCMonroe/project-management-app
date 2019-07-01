@@ -34,8 +34,8 @@ const Navbar = ({showNav, hide, loggedin}: any)=> (
 
 const Navbar2 = ({}) => (
 
-  <nav>
-    <div className="nav-wrapper white ">
+  <nav className="white custom-border-radius">
+    <div className="nav-wrapper white">
       <div className="input-field col s3">
           <input placeholder={"Search Here"} type="text"/>
       </div>
