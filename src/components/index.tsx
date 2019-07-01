@@ -11,9 +11,4 @@ import Footer from './Footer';
 import SelectInput from './SelectInput';
 import TeamMember from './TeamMember';
 
-<<<<<<< HEAD
-
-export {Header, Loader, Navbar, Navbar2, Project, Modal, SelectInput, Dashboard, Footer};
-=======
-export {Header, Loader, Navbar, SideNavbar, Project, Modal, SelectInput, Dashboard, Footer};
->>>>>>> 5f4efecdb4ae5da722d4552b2041b2cccc577de7
+export {Header, Loader, Navbar, SideNavbar, Project, Modal, SelectInput, Dashboard, Footer, TeamMember};

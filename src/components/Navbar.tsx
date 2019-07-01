@@ -44,7 +44,7 @@ const Navbar = ({}) => (
         <ul id="nav-mobile" className="right hide-on-med-and-down custom-navbar bold">
           <li><NavLink to="/home">Dashboard</NavLink></li>
           <li><NavLink to="/projects">Projects</NavLink></li>
-          <li><NavLink to="/projects">Team Members</NavLink></li>
+          <li><NavLink to="/team">Team Members</NavLink></li>
           <li><NavLink to="/setting">Settings</NavLink></li>
         </ul>
       </div>
