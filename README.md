@@ -7,14 +7,13 @@ npm i
 npm start
 ```
 
+# Adding Changes to GitHub
+```
+1. Save files
+2. git add .
+3. git commit -m 'change comment'
+4. git pull
+5. git push
+```
+
 https://project-management-app.netlify.com/
-
-
-#Adding Changes to GitHub
-```
-save files
-git add .
-git commit -m 'change comment'
-git pull
-git push
-```
