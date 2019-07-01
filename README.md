@@ -10,11 +10,11 @@ npm start
 https://project-management-app.netlify.com/
 
 
-############### ADDING CHANGES TO GITHUB ########################
-1. save files
-2. git add .
-3. git commit -m 'change comment' 
-4. git pull 
-5. git push 
-#################################################################
-
+#Adding Changes to GitHub
+```
+save files
+git add .
+git commit -m 'change comment'
+git pull
+git push
+```
