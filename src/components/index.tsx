@@ -9,5 +9,7 @@ import Project from './Project';
 import Modal from './Modal';
 import Footer from './Footer';
 import SelectInput from './SelectInput';
+import TeamMember from './TeamMember';
+
 
 export {Header, Loader, Navbar, Navbar2, Project, Modal, SelectInput, Dashboard, Footer};

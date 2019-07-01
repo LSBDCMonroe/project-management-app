@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router,  Route, Link, Switch } from "react-router-dom";
 import './App.css';
 import {Navbar} from './components';
-import {Home, Setting, Projects, Startpage} from './pages';
+import { Home, Setting, Projects, Startpage, TeamMembers } from './pages';
 
 type Props = {loggedin: boolean, tokenChecked: boolean, showNav: boolean, userName: string}
 
@@ -20,6 +20,7 @@ export default class App extends React.Component <{}, Props>{
             {this.state.loggedin?
             <Switch>
               <Route path="/projects" render={()=> <Projects {...this.state} />} />
+              <Route path="/team" render={() => <TeamMembers {...this.state}/>} />
               <Route path="/setting" component={Setting} />
               <Route path="*" render={()=> <Home {...this.state}  />} />
             </Switch>
