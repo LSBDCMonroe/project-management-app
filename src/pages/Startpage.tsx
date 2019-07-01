@@ -26,6 +26,9 @@ const Startpage = ({login, onChange}:{login: any, onChange: any})=>
                                 <input placeholder={"Username or Email"} onChange={onChange}/>
                                 <input placeholder={"Password"} type="password" onChange={onChange}/>
                               </div>
+                              <div className=" col s12 center">
+                                <p><a href="#">Forget Password ?</a></p>
+                              </div>
                             </div>
                             <div className="row">
                               <div className="col m12">
