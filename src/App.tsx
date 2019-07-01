@@ -16,14 +16,14 @@ export default class App extends React.Component <{}, Props>{
   render(){
     return(
         <Router>
-          <Navbar loggedin = {this.state.loggedin} showNav={this.state.showNav} hide={()=>{this.setState({showNav: !this.state.showNav})}}/>
             {this.state.loggedin?
+            <><Navbar/>
             <Switch>
               <Route path="/projects" render={()=> <Projects {...this.state} />} />
               <Route path="/team" render={() => <TeamMembers {...this.state}/>} />
               <Route path="/setting" component={Setting} />
               <Route path="*" render={()=> <Home {...this.state}  />} />
-            </Switch>
+            </Switch></>
            :<Switch>
               <Route path="*" render={()=> <Startpage onChange={(e:any)=>{this.setState({userName: e.target.value})}}
                                                     login={()=>{this.setState({loggedin: true})}}/>} />
