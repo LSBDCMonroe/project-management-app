@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Footer} from '../components';
-import {Navbar,Navbar2,Dashboard} from '../components';
+import {Navbar,Dashboard} from '../components';
 
 
 
@@ -19,13 +19,7 @@ const Wrapper = styled.div`
 
 const Home = ({userName}:{userName: string})=>
   <Wrapper className="">
-      <Navbar/>
-      <Navbar2/>
       <Dashboard/>
- 
-
-
-
       <Footer/>
   </Wrapper>;
 

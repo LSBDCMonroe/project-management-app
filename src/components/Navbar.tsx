@@ -19,7 +19,7 @@ const FloatBtn = styled.button`
     bottom: 3em;`;
 
 const active = {textShadow: "2px 2px 4px #000000" , color: "white"};
-const Navbar = ({showNav, hide, loggedin}: any)=> (
+const SideNavbar = ({showNav, hide, loggedin}: any)=> (
   <div>
     <div className={(showNav && loggedin? "show": "hide") + " left-nav-bar"}>
 
@@ -32,18 +32,19 @@ const Navbar = ({showNav, hide, loggedin}: any)=> (
   </div>
   );
 
-const Navbar2 = ({}) => (
+const Navbar = ({}) => (
 
-  <nav className="white custom-border-radius">
-    <div className="nav-wrapper white">
+  <nav className="blue custom-border-radius">
+    <div className="nav-wrapper blue">
       <div className="input-field col s3">
           <input placeholder={"Search Here"} type="text"/>
       </div>
       <div className="navbar-right-content">
         <ul id="nav-mobile" className="right hide-on-med-and-down custom-navbar bold">
-          <li><a href="sass.html">Current Projects</a></li>
-          <li><a href="badges.html">Past Projects</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
+          <li><NavLink to="/home">Dashboard</NavLink></li>
+          <li><NavLink to="/projects">Projects</NavLink></li>
+          <li><NavLink to="/projects">Team Members</NavLink></li>
+          <li><NavLink to="/setting">Settings</NavLink></li>
         </ul>
       </div>
 
@@ -52,4 +53,4 @@ const Navbar2 = ({}) => (
       
 );
 
-export {Navbar, Navbar2};
+export {Navbar,SideNavbar};
