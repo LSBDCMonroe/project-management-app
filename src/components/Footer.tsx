@@ -29,7 +29,6 @@ const Footer = ({}) =>
                     <NavLink className="grey-text text-lighten-3" to="/settings">Settings</NavLink>
                   </ListItem>
                 </ul>
-                
     </div>
   </div>
 </div>
