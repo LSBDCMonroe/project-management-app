@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import {TeamMember, Modal} from '../components';
 import {Wrapper} from '../style/styled';
 import {employees} from '../fakeJson';
-import {Footer} from '../components';
 
 
 
