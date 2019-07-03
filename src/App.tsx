@@ -17,7 +17,16 @@ export default class App extends React.Component <{}, Props>{
   render(){
     return(
         <Router>
-            {this.state.loggedin?
+          {this.state.newUser?
+
+          <Switch>
+            <Route exact path="/signup" render={()=> <Signup onChange={(e:any)=>{this.setState({userName: e.target.value})}}
+                                                    login={()=>{this.setState({loggedin: true})}}
+                                                     />} /> 
+          </Switch>
+          :<></>
+        }
+            {this.state.loggedin && not(this.state.newUser)?
             <><Navbar/>
             <Switch>
               <Route path="/projects" render={()=> <Projects {...this.state} />} />
@@ -35,16 +44,6 @@ export default class App extends React.Component <{}, Props>{
             </Switch>
 
           }
-
-{this.state.newUser?
-
-<Switch>
-  <Route exact path="/signup" render={()=> <Signup onChange={(e:any)=>{this.setState({userName: e.target.value})}}
-                                          login={()=>{this.setState({loggedin: true})}}
-                                           />} /> 
-</Switch>
-:<></>
-}
              />} />
         </Router>
 );
