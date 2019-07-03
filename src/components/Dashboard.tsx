@@ -10,14 +10,7 @@ const Dashboard = ()=>(
         <UpperDashboard/>
         <MiddleDashboard/>
         <BottomDashboard/>
-
-
-
-
-
-
     </div>
 );
 
 export default Dashboard;
-

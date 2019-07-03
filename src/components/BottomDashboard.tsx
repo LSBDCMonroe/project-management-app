@@ -4,8 +4,6 @@ import {Card, Badge} from '../style/styled';
 
 
 const BottomDashboard = ()=>(
-
-
     <div className="BottomDashboard">
         <div >
             <Card className="bold txt-sm">
@@ -32,8 +30,8 @@ const BottomDashboard = ()=>(
             <div className="align-center">Available Members: <div className="chip">Aayush</div></div>
             <div className="align-center">Average Project/Members: 3.2</div>
             </Card>
-        </div>        
-                     
+        </div>
+
 
     </div>
 

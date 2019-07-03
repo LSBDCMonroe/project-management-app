@@ -4,8 +4,6 @@ import '../pages/Startpage.css';
 import './Navbar.css';
 import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
 
-
-
 const FloatBtn = styled.button`
   position: fixed;
   bottom: 0.5em;
@@ -63,7 +61,7 @@ const Navbar = ({}) => (
 </ul>
 
 </div>
-      
+
 );
 
 export {Navbar,SideNavbar};
