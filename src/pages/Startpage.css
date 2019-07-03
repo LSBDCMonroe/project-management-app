@@ -35,3 +35,12 @@
         display: grid;
         grid-template-columns: 30% 40% 30%;
 }
+
+
+@media(max-width: 760px){
+
+  .BottomDashboard, .MiddleDashboard, .UpperDashboard{
+          grid-template-columns: 1fr;
+  }
+
+}
