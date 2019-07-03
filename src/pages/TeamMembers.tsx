@@ -1,16 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import {TeamMember, Modal, Profile} from '../components';
+import {TeamMember, Modal, Footer} from '../components';
 import {employees} from '../fakeJson';
-
-const Btn = styled.button`
-    width: 100%;
-    border-radius: 1em;
-    overflow: hidden;
-    &:hover {
-        box-shadow: 5px 5px 25px 1px black;
-    }
-`;
 
 const color = "linear-gradient(135deg, #667eea 0%, #764ba2 100%)";
 
@@ -19,6 +10,14 @@ const Div = styled.div`
     width: 66%;
     text-align: center;
     min-width: 400px;
+    background: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 1em;
+    overflow: hidden;
+    &:hover {
+        box-shadow: 5px 5px 25px 1px black;
+    }
 `;
 
 const Wrapper = styled.div`
@@ -34,19 +33,14 @@ const Wrapper = styled.div`
     background: ${props => props.color};
     @media(max-width: 600px){
     width: 100%;
-    padding-left: 1em;}
-`;
+    padding-left: 1em;}`;
 
 const TeamMembers = ({userName}:{userName: string}) => {
-    const [profile, setProfile] = useState(false);
     return (
         <Wrapper color={color}>
-            {employees.map((i: object, index: number)=>
-                <Div>
-                    <Btn onClick={()=>setProfile(true)}>
-                        <TeamMember {...i} key={index}/>
-                    </Btn>
-                    <Profile show={profile} onClose={()=>setProfile(false)}/>
+            {employees.map((emp: object, index: number)=>
+                <Div key={index}>
+                        <TeamMember {...emp} />
                 </Div>
             )}
         </Wrapper>

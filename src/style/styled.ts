@@ -26,6 +26,7 @@ const Badge = styled.div`
   const Grid = styled.div`
    display: grid;
    place-items: center;
+   grid-gaps: 1em;
    grid-template-columns: repeat(${props => props.color}, 1fr);
   `;
 
@@ -42,5 +43,5 @@ const Badge = styled.div`
     padding-left: 1em;}
     `;
 
-  
+
   export {Card, Badge, Grid, Wrapper};

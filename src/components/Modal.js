@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components'
-
 const Wrapper = styled.div`
 position: fixed;
 z-index: 1;
@@ -49,7 +48,7 @@ if(props.show){
     return (<Wrapper>
               <Modall>
               <Header>
-                <Btn style={{float: "right"}} onClick={props.close} className="bt right-corner"  onClick={props.onClose}> &nbsp;X&nbsp; </Btn>
+                <Btn style={{float: "right"}}  className="bt right-corner"  onClick={props.onClose}> &nbsp;X&nbsp; </Btn>
               </Header>
                 <div >
                 <div style={{minheight: "5em", padding: "2em"}} className="blue-txt bold txt-md">
@@ -70,4 +69,22 @@ if(props.show){
 }
   };
 
-  export default Modal;
+  const ModalTemp = props =>
+      (<Wrapper>
+                <Modall>
+                <Header>
+                  <Btn style={{float: "right"}} className="bt right-corner"  onClick={props.onClose}> &nbsp;X&nbsp; </Btn>
+                </Header>
+                  <div >
+                  <div style={{minheight: "5em", padding: "2em"}} className="blue-txt bold txt-md">
+                  <h3>{props.firstName}</h3>
+                  <h3>{props.email}</h3>
+                  </div>
+                   <div>
+                    <button className="btn hoverr full" onClick={props.close}>Cancel</button>
+                  </div>
+                </div>
+                </Modall>
+            </Wrapper>);
+
+  export { Modal, ModalTemp};

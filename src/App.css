@@ -24,6 +24,13 @@ a, a:visited {
 .end{
     justify-self: end;
 }
+.stretch{
+   justify-items: stretch;
+}
+
+.full{
+  width: 100%
+}
 
 .txt-xs{
   font-size: 0.95em;
