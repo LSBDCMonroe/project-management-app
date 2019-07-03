@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import './Startpage.css';
-import Logo from '../assets/images/logo_on.png';
 
 const Wrapper = styled.div`
   background-color: #dde1ea;
@@ -13,6 +12,7 @@ const Wrapper = styled.div`
 
 const Signup = ({login, onChange}:{login: any, onChange: any})=>
                   <Wrapper>
+                        <h1>TEST</h1>
                     <div className="wrapper-item-left"></div>
                     <div className="wrapper-item-center">
                       <div className="container center" >

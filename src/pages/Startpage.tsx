@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   place-items: center;
   `;
 
-const Startpage = ({login, onChange}:{login: any, onChange: any})=>
+const Startpage = ({login, onChange, createAccount}:{login: any, onChange: any,createAccount: any})=>
                   <Wrapper>
                     <div className="wrapper-item-left"></div>
                     <div className="wrapper-item-center">
@@ -31,7 +31,7 @@ const Startpage = ({login, onChange}:{login: any, onChange: any})=>
                                 <p><a href="#">Forget Password ?</a></p>
                               </div>
                               <div className=" col s12 center">
-                                <p><NavLink to="/Signup">Sign Up</NavLink></p>
+                                <p><a href="/Signup" onClick={createAccount}>Sign Up</a></p>
                               </div>
                             </div>
                             <div className="row">
