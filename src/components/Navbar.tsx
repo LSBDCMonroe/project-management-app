@@ -35,11 +35,15 @@ const SideNavbar = ({showNav, hide, loggedin}: any)=> (
 
 const Navbar = ({}) => (
 
+  <div>
+
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   <nav className="blue custom-border-radius">
     <div className="nav-wrapper blue">
-      <div className="input-field col s3">
-          <input placeholder={"Search Here"} type="text"/>
-      </div>
+      <a className="brandd-logo" style={{fontSize:"30pt"}}> LSBDC </a>
+      <a data-target="mobile-nav" className="sidenav-trigger"><i className="material-icons">menu</i></a>
       <div className="navbar-right-content">
         <ul id="nav-mobile" className="right hide-on-med-and-down custom-navbar bold">
           <li><NavLink to="/home">Dashboard</NavLink></li>
@@ -48,9 +52,17 @@ const Navbar = ({}) => (
           <li><NavLink to="/setting">Settings</NavLink></li>
         </ul>
       </div>
-
     </div>
   </nav>
+
+<ul className="sidenav" id="mobile-nav">
+<li><a href="sass.html">Sass</a></li>
+<li><a href="badges.html">Components</a></li>
+<li><a href="collapsible.html">Javascript</a></li>
+<li><a href="mobile.html">Mobile</a></li>
+</ul>
+
+</div>
       
 );
 
