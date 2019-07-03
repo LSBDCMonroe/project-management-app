@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import {Card, Badge, Grid} from '../style/styled';
-import { relative } from 'path';
 
 const Paragraph = styled.p `
     font-size: 180%;
@@ -12,12 +11,12 @@ const Paragraph = styled.p `
 
 const TeamMember = ({firstName, lastName, email, currentProjects, finishedProjects, username}: any) => {
     return(
-        <Card style={{padding: "1% 10% 1% 10%",overflow: "hidden"}} id={username}>
-            <Paragraph style={{float: "left"}}>{firstName}</Paragraph>
-            <Paragraph style={{float: "right"}}>{email}</Paragraph>
-            <Paragraph style={{float: "left", clear: "left"}}>Current Projects: {currentProjects}</Paragraph>
-            <Paragraph style={{float: "right", clear: "right"}}>Finished Projects: {finishedProjects}</Paragraph>
-        </Card>
+        <div style={{padding: "1% 10% 1% 10%"}} id={username}>
+            <Paragraph >Name: {firstName}</Paragraph>
+            <Paragraph >Email: {email}</Paragraph>
+            <Paragraph >Current Projects: {currentProjects}</Paragraph>
+            <Paragraph >Finished Projects: {finishedProjects}</Paragraph>
+        </div>
     );
 }
 

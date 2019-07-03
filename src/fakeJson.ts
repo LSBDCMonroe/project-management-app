@@ -49,6 +49,33 @@ const employees = [
     email: "gurungamar25@gmail.com",
     currentProjects: 2,
     finishedProjects: 15
+  }, 
+  {
+    uniqueID: "!FFG@H#$hjj2",
+    firstName: "Sonam",
+    lastName: "Gurung",
+    username: "SonamTheMom",
+    email: "gurungamar25@gmail.com",
+    currentProjects: 2,
+    finishedProjects: 15
+  }, 
+  {
+    uniqueID: "!FFG@H#$hjj2",
+    firstName: "Sonam",
+    lastName: "Gurung",
+    username: "SonamTheMom",
+    email: "gurungamar25@gmail.com",
+    currentProjects: 2,
+    finishedProjects: 15
+  }, 
+  {
+    uniqueID: "!FFG@H#$hjj2",
+    firstName: "Sonam",
+    lastName: "Gurung",
+    username: "SonamTheMom",
+    email: "gurungamar25@gmail.com",
+    currentProjects: 2,
+    finishedProjects: 15
   }
 ];
 
