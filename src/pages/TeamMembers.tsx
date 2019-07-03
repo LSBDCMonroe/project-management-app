@@ -49,7 +49,6 @@ const TeamMembers = ({userName}:{userName: string}) => {
                     <Profile show={profile} onClose={()=>setProfile(false)}/>
                 </Div>
             )}
-            <Footer/>
         </Wrapper>
     );
 }

@@ -3,5 +3,6 @@ import Startpage from './Startpage';
 import Setting from './Setting';
 import Projects from './Projects';
 import TeamMembers from './TeamMembers';
+import Signup from './Signup';
 
-export {Home, Startpage, Setting, Projects, TeamMembers};
+export {Home, Startpage, Setting, Projects, TeamMembers, Signup};

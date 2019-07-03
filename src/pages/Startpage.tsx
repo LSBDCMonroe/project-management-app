@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import './Startpage.css';
 import Logo from '../assets/images/logo_on.png';
+import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
 
 const Wrapper = styled.div`
   background-color: #dde1ea;
@@ -29,6 +30,9 @@ const Startpage = ({login, onChange}:{login: any, onChange: any})=>
                               <div className=" col s12 center">
                                 <p><a href="#">Forget Password ?</a></p>
                               </div>
+                              <div className=" col s12 center">
+                                <p><NavLink to="/Signup">Sign Up</NavLink></p>
+                              </div>
                             </div>
                             <div className="row">
                               <div className="col m12">
@@ -41,7 +45,6 @@ const Startpage = ({login, onChange}:{login: any, onChange: any})=>
                           </div>
                         </div>
                     </div>
-                    
                     <div className="wrapper-item-right"></div>
                       
                     </Wrapper>;
