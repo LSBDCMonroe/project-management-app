@@ -20,7 +20,6 @@ const Wrapper = styled.div`
 const Home = ({userName}:{userName: string})=>
   <Wrapper className="">
       <Dashboard/>
-      <Footer/>
   </Wrapper>;
 
 export default Home;

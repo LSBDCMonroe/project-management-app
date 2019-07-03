@@ -21,7 +21,6 @@ const Projects =({userName}:{userName: string})=>{
         {projects.map((i: object, index: number)=><Project {...i} key={index} onEdit={()=>setModal(true)}/>)}
         <Modal show={modal} onClose={()=>setModal(false)}/>
       </div>
-      <Footer/>
       </Wrapper>);
 }
 
