@@ -5,11 +5,8 @@ import { relative } from 'path';
 
 const Paragraph = styled.p `
     font-size: 180%;
-    margin: 1%;
-`
-
-
-
+    margin: 1%;`;
+    
 const TeamMember = ({firstName, lastName, email, currentProjects, finishedProjects, username}: any) => {
     return(
         <Card style={{padding: "1% 10% 1% 10%",overflow: "hidden"}} id={username}>
