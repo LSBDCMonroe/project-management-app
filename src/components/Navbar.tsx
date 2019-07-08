@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import '../pages/Startpage.css';
 import './Navbar.css';
-import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const FloatBtn = styled.button`
   position: fixed;
@@ -31,7 +31,7 @@ const SideNavbar = ({showNav, hide, loggedin}: any)=> (
   </div>
   );
 
-const Navbar = ({}) => (
+const Navbar = () => (
 
   <div>
 
@@ -40,8 +40,8 @@ const Navbar = ({}) => (
 
   <nav className="blue custom-border-radius">
     <div className="nav-wrapper blue">
-      <a className="brandd-logo" style={{fontSize:"30pt"}}> LSBDC </a>
-      <a data-target="mobile-nav" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+      <a href="../home" className="brandd-logo" style={{fontSize:"30pt"}}> LSBDC </a>
+      <a href="../home" data-target="mobile-nav" className="sidenav-trigger"><i className="material-icons">menu</i></a>
       <div className="navbar-right-content">
         <ul id="nav-mobile" className="right hide-on-med-and-down custom-navbar bold">
           <li><NavLink to="/home">Dashboard</NavLink></li>

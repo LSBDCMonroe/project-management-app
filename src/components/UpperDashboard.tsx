@@ -1,6 +1,6 @@
 import React from 'react';
 import '../pages/Startpage.css';
-import {Card, Badge} from '../style/styled';
+import {Card} from '../style/styled';
 
 
 const UpperDashboard = ()=>(

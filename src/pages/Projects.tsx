@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import {Project, Modal} from '../components';
 import {Wrapper} from '../style/styled';
 import {projects} from '../fakeJson';
-import {Footer} from '../components';
 
 const Btn = styled.button`
    border-radius: 1em;`;

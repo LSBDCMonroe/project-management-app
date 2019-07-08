@@ -19,7 +19,7 @@ const Startpage = ({login, onChange, createAccount}:{login: any, onChange: any,c
                       <div className="container center" >
                           <div className="row card ">
                           <div className="card-image " style={{padding:"2em"}}>
-                              <img src={Logo}/>
+                              <img src={Logo} alt="LSBDC Logo"/>
                         </div>
                           <div className="">
                             <div className="row card-content">
@@ -28,7 +28,7 @@ const Startpage = ({login, onChange, createAccount}:{login: any, onChange: any,c
                                 <input placeholder={"Password"} type="password" onChange={onChange}/>
                               </div>
                               <div className=" col s12 center">
-                                <p><a href="#">Forget Password ?</a></p>
+                                <p><a href="*">Forget Password ?</a></p>
                               </div>
                               <div className=" col s12 center">
                                 <p><a href="/Signup" onClick={createAccount}>Sign Up</a></p>
