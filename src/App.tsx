@@ -26,22 +26,22 @@ export default class App extends React.Component <{}, Props>{
               <Route path="/profilepage" render={() => <ProfilePage {...this.state}/>}/>
               <Route path="/setting" component={Setting} />
               <Route path="*" render={()=> <Home {...this.state}  />} />
-              
+
             </Switch>
             <Footer/>
             </>
            :<Switch>
-             
+
             <Route exact path="/signup" render={()=> <Signup onChange={(e:any)=>{this.setState({userName: e.target.value})}}
-                  login={()=>{this.setState({loggedin: true})}} />} /> 
-            
+                  login={()=>{this.setState({loggedin: true})}} />} />
+
              <Route path="*" render={()=> <Startpage onChange={(e:any)=>{this.setState({userName: e.target.value})}}
                                                     login={()=>{this.setState({loggedin: true})}}
                                                     createAccount={()=> {this.setState({newUser: true})}}  />} />
             </Switch>
 
           }
-             />} />
+      
         </Router>
 );
     }
