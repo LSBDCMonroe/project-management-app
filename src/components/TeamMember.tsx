@@ -12,13 +12,13 @@ const TeamMember = (props : any) => {
     const [modal, setModal] = useState(false);
     const {firstName, lastName, email, currentProjects, finishedProjects, username} = props;
     return(
-        <div onClick={()=>setModal(!modal)} style={{padding: "1% 10% 1% 10%"}} id={username}>
+        <a href={"/profilepage/" + username} /* onClick={()=>setModal(!modal)}*/ style={{padding: "1% 10% 1% 10%"}} id={username}>
             <Paragraph >Name: {firstName}</Paragraph>
             <Paragraph >Email: {email}</Paragraph>
             <Paragraph >Current Projects: {currentProjects}</Paragraph>
             <Paragraph >Finished Projects: {finishedProjects}</Paragraph>
             {modal &&  <ModalTemp show={modal} {...props} onClose={()=>setModal(!modal)}/> }
-        </div>
+        </a>
     );
 }
 
