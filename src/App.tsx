@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import './App.css';
 import {Navbar, Footer} from './components';
 import { Home, Setting, Projects, Startpage, TeamMembers, ProfilePage, Signup} from './pages';
@@ -10,7 +10,7 @@ type Props = {loggedin: boolean, tokenChecked: boolean, showNav: boolean, userNa
 export default class App extends React.Component <{}, Props>{
   constructor(props: Props){
     super(props);
-    this.state = { loggedin: false, tokenChecked: false, showNav: true, userName: "", newUser: false};
+    this.state = {loggedin: false, tokenChecked: false, showNav: true, userName: "", newUser: false};
 
   }
 
@@ -18,15 +18,6 @@ export default class App extends React.Component <{}, Props>{
   render(){
     return(
         <Router>
-          {this.state.newUser?
-          <Switch>
-           {/* <Route exact path="/signup" render={()=> <Signup onChange={(e:any)=>{this.setState({userName: e.target.value})}}
-                                                    login={()=>{this.setState({newUser: true})}} 
-                                                      />} /> */}
-            <Redirect to="/signup" />
-          </Switch>
-          :<></>
-        }
             {this.state.loggedin ?
             <><Navbar/>
             <Switch>
@@ -40,10 +31,13 @@ export default class App extends React.Component <{}, Props>{
             <Footer/>
             </>
            :<Switch>
-              <Route path="*" render={()=> <Startpage onChange={(e:any)=>{this.setState({userName: e.target.value})}}
+             
+            <Route exact path="/signup" render={()=> <Signup onChange={(e:any)=>{this.setState({userName: e.target.value})}}
+                  login={()=>{this.setState({loggedin: true})}} />} /> 
+            
+             <Route path="*" render={()=> <Startpage onChange={(e:any)=>{this.setState({userName: e.target.value})}}
                                                     login={()=>{this.setState({loggedin: true})}}
-                                                    createAccount={()=> {this.setState({newUser: true})}}
-                                                     />} />
+                                                    createAccount={()=> {this.setState({newUser: true})}}  />} />
             </Switch>
 
           }
