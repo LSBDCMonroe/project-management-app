@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import {Wrapper} from '../style/styled';
+import styled from 'styled-components';
 
 const Card = styled.div`
   border-top: 1px solid #2B547E;
