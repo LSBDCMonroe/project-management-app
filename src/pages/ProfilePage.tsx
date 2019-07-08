@@ -26,7 +26,7 @@ const ProfilePage = ({userName}:{userName: string}) => {
 
     if (employee === -1)
     {
-        throw "User Not Found";
+        throw new Error("User Not Found");
     }
 
 

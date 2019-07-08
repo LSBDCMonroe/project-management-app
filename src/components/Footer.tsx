@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
-import { style } from '@material-ui/system';
+import { NavLink } from "react-router-dom";
+//import { style } from '@material-ui/system';
 import styled from 'styled-components';
 
 const ListItem = styled.li`
@@ -18,7 +18,7 @@ height: 20%;
 background-color:blue;
 `;
 
-const Footer = ({}) => 
+const Footer = () => 
 
 <Bottom className="page-footer">
 <div className="container">
@@ -48,7 +48,7 @@ const Footer = ({}) =>
   </div>
   <div className="container">
   Copyright © {new Date().getFullYear()}
-  <a className="grey-text text-lighten-4 right" href="https://www.lsbdc.org" target="_blank">www.lsbdc.org</a>
+  <a className="grey-text text-lighten-4 right" href="https://www.lsbdc.org" target="_blank" rel="noopener noreferrer">www.lsbdc.org</a>
   </div>
 </div>
 </Bottom>;

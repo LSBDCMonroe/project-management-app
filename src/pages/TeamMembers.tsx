@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {TeamMember, Modal, Footer} from '../components';
+import {TeamMember} from '../components';
 import {employees} from '../fakeJson';
 import {Wrapper} from '../style/styled';
 
@@ -26,7 +26,7 @@ const TeamMembers = ({userName}:{userName: string}) => {
                                          justifyContent: "center",
                                          flexWrap: "wrap"}}>
             {employees.map((emp: object, index: number)=>
-                <Div key={index}>
+                <Div key={index} id={employees[index].username}>
                         <TeamMember {...emp} />
                 </Div>
             )}

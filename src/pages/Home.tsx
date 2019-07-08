@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Footer} from '../components';
-import {Navbar,Dashboard} from '../components';
+import {Dashboard} from '../components';
 
 
 

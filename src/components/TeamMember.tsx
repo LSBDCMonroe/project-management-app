@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import {Card, Badge, Grid} from '../style/styled';
 import {ModalTemp} from '../components';
 
 const Paragraph = styled.p `
@@ -13,7 +12,7 @@ const TeamMember = (props : any) => {
     const {firstName, lastName, email, currentProjects, finishedProjects, username} = props;
     return(
         <a href={"/profilepage/" + username} /* onClick={()=>setModal(!modal)}*/ style={{padding: "1% 10% 1% 10%"}} id={username}>
-            <Paragraph >Name: {firstName}</Paragraph>
+            <Paragraph >Name: {firstName} {lastName}</Paragraph>
             <Paragraph >Email: {email}</Paragraph>
             <Paragraph >Current Projects: {currentProjects}</Paragraph>
             <Paragraph >Finished Projects: {finishedProjects}</Paragraph>
