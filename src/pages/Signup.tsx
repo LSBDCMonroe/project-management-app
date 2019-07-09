@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import './Startpage.css';
+import {SignUpForm} from '../components';
 
 
 
@@ -19,10 +20,7 @@ const Wrapper = styled.div`
   padding-left: 30%;
   text-decoration: underline;
   `;
-function passwordCheck() {
-  let textinput = React.createRef();
 
-}
 
 const Signup = ({login}:{login: any})=>
               <Wrapper className="wrapper-item-center">
@@ -31,29 +29,13 @@ const Signup = ({login}:{login: any})=>
                     <p className="center-align">
                       <Header>SIGN UP</Header>
                     </p>
-                    <div className="row">
-                      <div className="col S4"><input type="text" placeholder="First Name"/></div>
-                      <div className="col s6"><input type="text" placeholder="Last Name"/></div>
-                    </div>
-                    <div className="row">
-                      <div className="col s12"><input type="text" placeholder="Username"/></div>
-                    </div>
-                    <div className="row">
-                      <div className="col s12"><input type="text" placeholder="Email Address"/></div>
-                    </div>
-                    <div className="row">
-                      <div className="col s12"><input type="text" placeholder="Phone Number (Optional)"/></div>
-                    </div>
-                    <div className="row">
-                      <div className="col s12"><input type="password" placeholder="Password"/></div>
-                    </div>
-                    <div className="row">
-                      <div className="col s12"><input type="password" placeholder="Confirm Password" onChange={passwordCheck}/></div>
-                    </div>
-                    <p className="center-align">
-                      <button className="btn btn-small waves-effect waves-light" onClick={login}>Create Account</button>
-                      <div className="logButton"><br/> Already have an Account?<a href="./Startpage"> Log In</a></div>
-                    </p>
+                    < SignUpForm></ SignUpForm>
+                    
+
+
+
+
+
                   </div>
                 </div>
               </Wrapper>;

@@ -10,5 +10,6 @@ import {Modal, ModalTemp} from './Modal';
 import Footer from './Footer';
 import SelectInput from './SelectInput';
 import TeamMember from './TeamMember';
+import SignUpForm from './SignUpForm';
 
-export {Header, Loader, Navbar, SideNavbar, Project, Modal, SelectInput, Dashboard, Footer, TeamMember, ModalTemp};
+export {Header, Loader, Navbar, SideNavbar, Project, Modal, SelectInput, Dashboard, Footer, TeamMember, ModalTemp, SignUpForm};
