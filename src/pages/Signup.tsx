@@ -19,9 +19,12 @@ const Wrapper = styled.div`
   padding-left: 30%;
   text-decoration: underline;
   `;
+function passwordCheck() {
+  let textinput = React.createRef();
 
+}
 
-const Signup = ({login, onChange}:{login: any, onChange: any})=>
+const Signup = ({login}:{login: any})=>
               <Wrapper className="wrapper-item-center">
                 <div className="row card">
                   <div className="row card-content">
@@ -45,10 +48,11 @@ const Signup = ({login, onChange}:{login: any, onChange: any})=>
                       <div className="col s12"><input type="password" placeholder="Password"/></div>
                     </div>
                     <div className="row">
-                      <div className="col s12"><input type="password" placeholder="Confirm Password"/></div>
+                      <div className="col s12"><input type="password" placeholder="Confirm Password" onChange={passwordCheck}/></div>
                     </div>
                     <p className="center-align">
                       <button className="btn btn-small waves-effect waves-light" onClick={login}>Create Account</button>
+                      <div className="logButton"><br/> Already have an Account?<a href="./Startpage"> Log In</a></div>
                     </p>
                   </div>
                 </div>
