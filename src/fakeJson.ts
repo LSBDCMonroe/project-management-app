@@ -6,7 +6,7 @@ const projects = [{
   workers: ["Aayush Shrestha"],
   link: "aayushh.com",
   startedOn: "2019",
-  completedOn: null
+  completedOn: ""
 },
 {
   title: "New Project",
@@ -16,7 +16,7 @@ const projects = [{
   workers: ["Nick Salter"],
   link: "",
   startedOn: "2019",
-  completedOn: null
+  completedOn: ""
 },
 {
   title: "Exciting Project",
@@ -26,7 +26,7 @@ const projects = [{
   workers: ["Sonam Gurung"],
   link: "",
   startedOn: "2019",
-  completedOn: null
+  completedOn: ""
 }
 ];
 
@@ -49,7 +49,7 @@ const employees = [
     email: "gurungamar25@gmail.com",
     currentProjects: 2,
     finishedProjects: 15
-  }, 
+  },
   {
     uniqueID: "!FFG@H#$hjj2",
     firstName: "Sonam",
@@ -58,7 +58,7 @@ const employees = [
     email: "gurungamar25@gmail.com",
     currentProjects: 2,
     finishedProjects: 15
-  }, 
+  },
   {
     uniqueID: "!FFG@H#$hjj2",
     firstName: "Sonam",
@@ -67,7 +67,7 @@ const employees = [
     email: "gurungamar25@gmail.com",
     currentProjects: 2,
     finishedProjects: 15
-  }, 
+  },
   {
     uniqueID: "!FFG@H#$hjj2",
     firstName: "Sonam",

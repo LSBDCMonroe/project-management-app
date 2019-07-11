@@ -13,11 +13,13 @@ const Wrapper = styled.div`
   `;
 
 const Startpage = ({login, onChange, createAccount}:{login: any, onChange: any,createAccount: any})=>
+{
+return(
                   <Wrapper>
                     <div className="wrapper-item-left"></div>
                     <div className="wrapper-item-center">
                       <div className="container center" >
-                          <div className="row card ">
+                          <div className="row card full-on-mobile">
                           <div className="card-image " style={{padding:"2em"}}>
                               <img src={Logo} alt="LSBDC Logo"/>
                         </div>
@@ -46,6 +48,6 @@ const Startpage = ({login, onChange, createAccount}:{login: any, onChange: any,c
                         </div>
                     </div>
                     <div className="wrapper-item-right"></div>
-                      
-                    </Wrapper>;
+
+                    </Wrapper>);}
 export default Startpage;

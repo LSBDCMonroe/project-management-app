@@ -15,7 +15,9 @@ a, a:visited {
 .align-left{
   text-align: left ;
 }
-
+.full-on-mobile{
+  min-width: 300px;
+}
 
 .bold{
   font-weight: bold !important;

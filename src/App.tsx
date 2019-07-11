@@ -19,7 +19,7 @@ export default class App extends React.Component <{}, Props>{
     return(
         <Router>
             {this.state.loggedin ?
-            <><Navbar/>
+            <div className={this.state.showNav? "grid-main": ""}><Navbar/>
             <Switch>
               <Route path="/projects" render={()=> <Projects {...this.state} />} />
               <Route path="/team" render={() => <TeamMembers {...this.state}/>} />
@@ -29,7 +29,7 @@ export default class App extends React.Component <{}, Props>{
 
             </Switch>
             <Footer/>
-            </>
+            </div>
            :<Switch>
 
             <Route exact path="/signup" render={()=> <Signup onChange={(e:any)=>{this.setState({userName: e.target.value})}}
@@ -41,7 +41,7 @@ export default class App extends React.Component <{}, Props>{
             </Switch>
 
           }
-      
+
         </Router>
 );
     }
