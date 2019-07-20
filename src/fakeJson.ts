@@ -11,7 +11,7 @@ const projects = [{
 {
   title: "New Project",
   status: "Waiting for Apporval",
-  progress: 100,
+  progress: 95,
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempiquip ex ea commodo consequat. Dutate velit esse cillum dolore eu fugiat nulla pariatur.",
   workers: ["Nick Salter"],
   link: "",
